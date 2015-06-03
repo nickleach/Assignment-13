@@ -2,13 +2,19 @@
 <ul class"ul-right">
   {{#each timelines}}
       <div class="topstuff">
-      <div class="dates">{{date}}</div>
-      <div class="times">{{times}}</div>
-      <div class="icons"><i class="fa {{icon}}"></i></div>
+        <div class="dates">{{date}}</div>
+        <div class="times">{{times}}</div>
+        <div class="icons">
+          <i class="fa {{icon}}"></i>
+        </div>
       </div>
       <li class="mainstuff">
-      <h4>{{title}}</h4>
-      <section>{{content}}</section>
+        <section>
+          <article>
+            <h4>{{title}}</h4>
+            <p>{{content}}</p>
+          </article>
+        </section>
       </li>
   {{/each}}
 </ul>

@@ -1,0 +1,48 @@
+section{
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+li{
+  margin-bottom: 0;
+}
+.topstuff{
+  width: 150px;
+  float: left;
+  height: 0;
+  transition: all 0.5s ease;
+}
+
+.container{
+  width: 820px;
+}
+.mainstuff{
+  float: right;
+  border-left: 8px solid #B1DBF5;
+}
+.times{
+  font-size: 40px;
+}
+.dates{
+  right: 65px;
+  font-size: 12px;
+}
+.fa{
+  font-size: 20px;
+}
+.icons{
+  right: 13px;
+
+}
+article:before{
+    content: "";
+  height: 0;
+  width: 0;
+  top: 15px;
+  left: 9px;
+  border: 8px solid transparent;
+  position: absolute;
+  border-right-color: #3A95C9;
+}
+article:hover:before {
+  border-right-color: #6FC0EC;
+}

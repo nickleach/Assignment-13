@@ -1,10 +1,20 @@
 section{
+  position:relative;
+}
+article{
+  background-color: #3A95C9;
+   width: 600px;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-left: 25px;
 }
 ul{
   list-style: none;
 }
 li{
-  background-color: #3A95C9;
+
 }
 h4{
   border-bottom: 1px solid #97D1EF;
@@ -20,24 +30,36 @@ i{
 .topstuff{
   position: relative;
   height: 60px;
-  min-width: 600px;
+  width: 650px;
 }
 .fa{
   font-size: 30px;
 }
 .container{
-  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 .mainstuff{
-  width: 600px;
-  color: white;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 10px;
+
 }
-.mainstuff:hover{
+article:hover{
   background-color: #6FC0EC;
+}
+article:before{
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  top: -16px;
+  left: 35px;
+  border: 8px solid transparent;
+  position: absolute;
+  border-bottom-color: #3A95C9;
+}
+article:hover:before {
+  border-right-color: #6FC0EC;
 }
 .icons{
 position: absolute;
